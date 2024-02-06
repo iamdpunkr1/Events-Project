@@ -1,7 +1,7 @@
 import logo from '../assets/logo.jpg'
 const Navbar = () => {
   return (
-    <header className='bg-transparent sticky top-0 z-10 text-white'>
+    <header className='bg-black sticky top-0 z-50 text-white '>
         <nav className='max-w-[1200px] mx-auto flex justify-between py-6'>
             <div className='text-xl font-bold'>
               TREND MMS
