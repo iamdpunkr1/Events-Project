@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About";
+import Events from "./components/Events";
 import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import Navbar from "./components/Navbar";
@@ -16,6 +17,7 @@ function App() {
     <YTVideos />
     <About />
     <Mission />
+    <Events />
    </>
   )
 }
