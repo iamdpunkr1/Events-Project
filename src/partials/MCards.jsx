@@ -2,7 +2,7 @@
 const MCards = ({title}) => {
   return (
     <a
-    className="flex flex-col flex-wrap mb-0 overflow-hidden rounded lg:flex-row dark:bg-gray-100"
+    className="flex flex-col flex-wrap mb-0 overflow-hidden rounded lg:flex-row "
     href="#"
   >
     <div className="relative w-full overflow-hidden lg:w-2/4 h-80">
