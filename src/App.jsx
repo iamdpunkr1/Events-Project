@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import Navbar from "./components/Navbar";
 import YTVideos from "./components/YTVideos";
+import Team from "./components/Team";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <About />
     <Mission />
     <Events />
+    <Team/>
    </>
   )
 }
