@@ -6,6 +6,8 @@ import Mission from "./components/Mission";
 import Navbar from "./components/Navbar";
 import YTVideos from "./components/YTVideos";
 import Team from "./components/Team";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
     <Mission />
     <Events />
     <Team/>
+    <Gallery/>
+    <Footer/>
    </>
   )
 }
