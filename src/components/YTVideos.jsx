@@ -33,9 +33,9 @@ const YTVideos = () => {
         </div>
       
       <div className="flex justify-center flex-wrap gap-8 ">
-        <Cards />
-        <Cards />
-        <Cards />
+        <Cards title="Northeast Festival" link="https://youtu.be/SK9AlIbexOE?si=gZAc-JD9Jwjcjbv5"/>
+        <Cards title="North Festival " link=""/>
+        <Cards title="" link=""/>
       </div>
         
     </div>
