@@ -1,7 +1,7 @@
 import videoplayback from "../assets/videoplayback.mp4";
 const Hero = () => {
   return (
-    <div className="relative h-screen z-0">
+    <div className="relative -top-20 h-screen z-0">
     <video  className="w-full h-full object-cover z-0" autoPlay loop muted>
       <source src={videoplayback} type="video/mp4"  />
     </video>

@@ -1,21 +1,39 @@
-import logo from '../assets/logo.jpg'
-const Navbar = () => {
-  return (
-    <header className='bg-black sticky top-0 z-50 text-white '>
-        <nav className='max-w-[1200px] mx-auto flex justify-between py-6'>
-            <div className='text-xl font-bold'>
-              TREND MMS
-              {/* <img src={logo} alt='logo' className='w-32 ' /> */}
-            </div>
-            <ul className='flex gap-8'>
-                <li className=' font-medium'>Home</li>
-                <li className=' font-medium'>About</li>
-                <li className=' font-medium'>Services</li>
-                <li className=' font-medium'>Contact</li>
-            </ul>
-        </nav>
-    </header>
-  )
-}
+import React, { useState, useEffect } from 'react';
+import logo2 from '../assets/logo2.png';
 
-export default Navbar
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 100;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
+  return (
+    <header className={`sticky top-0 z-50 text-white ${scrolled ? 'bg-black' : ''}`}>
+      <nav className='max-w-[1200px] mx-auto flex justify-between'>
+        <div className='text-xl font-bold'>
+          <img src={logo2} alt='logo' className='w-48' />
+        </div>
+        <ul className='flex items-center gap-x-8'>
+          <li className='font-medium'>Home</li>
+          <li className='font-medium'>About</li>
+          <li className='font-medium'>Services</li>
+          <li className='font-medium'>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;

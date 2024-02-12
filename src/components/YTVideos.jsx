@@ -1,13 +1,15 @@
 import Cards from "../partials/Cards"
-
+import AnimatedVideo from "../partials/AnimatedVideo"
 const bg="light"
 const YTVideos = () => {
   return (
-    <div className=" w-full bg-white relative pb-24 overflow-hidden">
+    <div className=" w-full bg-black relative pb-24 overflow-hidden">
        <div className='absolute bg-red-500 h-96 w-96 rounded-full z-1 blur-2xl -right-20 top-80 md:top-60 lg:top-40 opacity-50'></div>
         <div className='absolute bg-red-500 h-96 w-96 rounded-full z-1 blur-2xl -left-40 -bottom-20 opacity-50'></div>
      
-      <div className="max-w-[1200px] mx-auto py-8 z-10">
+     
+      <div className="max-w-[1200px] mx-auto py-8 z-10 relative">
+      <AnimatedVideo/>
         <div className="text-center py-8 my-8 z-10">
           <h1 className={`z-10 text-5xl font-semibold ${bg=="dark"? "text-white" : "text-[#222]"} text-center`}>
               CHECK OUT OUR <span className="text-red-500"> VIDEOS</span>
