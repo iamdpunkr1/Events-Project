@@ -33,9 +33,10 @@ const Team = () => {
             </div>
           </div>
         </div>
+        <Member/>
 
       </div>
-      <Member/>
+      
     </div>
   </section>
   

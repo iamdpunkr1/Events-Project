@@ -21,7 +21,7 @@ const About = () => {
         <img
           src="https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg"
           alt=""
-          className="relative z-40 object-cover w-full h-96"
+          className="relative  object-cover w-full h-96"
         />
       </div>
       <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">

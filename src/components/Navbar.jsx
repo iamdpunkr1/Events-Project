@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import logo2 from '../assets/logo2.png';
+import Hamburger from 'hamburger-react';
+
+const navStyles = "cursor-pointer hover:text-[#ecba00]";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,18 +24,33 @@ const Navbar = () => {
   }, [scrolled]);
 
   return (
-    <header className={`sticky top-0 z-50 text-white ${scrolled ? 'bg-black' : ''}`}>
+    <header className={`sticky top-0 z-40 text-white ${scrolled ? 'bg-black' : ''}`}>
       <nav className='max-w-[1200px] mx-auto flex justify-between'>
         <div className='text-xl font-bold'>
           <img src={logo2} alt='logo' className='w-48' />
         </div>
-        <ul className='flex items-center gap-x-8'>
+        <div className="flex items-center lg:hidden">
+                 <Hamburger toggled={isOpen} toggle={setOpen} size={30} color={"#fff"}  />
+        </div>
+        <div className='hidden lg:flex ' >
+        <ul className='flex items-center gap-x-8  '>
           <li className='font-medium'>Home</li>
           <li className='font-medium'>About</li>
           <li className='font-medium'>Services</li>
           <li className='font-medium'>Contact</li>
         </ul>
+        </div>
       </nav>
+
+      <div className={`absolute  sidenav ${isOpen? "show": ""}`}>
+                   
+                   <ul className="font-semibold flex flex-col text-white gap-8 px-8 mt-28">
+                       <li className={navStyles}>Home</li>
+                       <li className={navStyles}>About</li>
+                       <li className={navStyles}>Services</li>
+                       <li className={navStyles}>Contact</li>
+                   </ul>
+     </div>
     </header>
   );
 };
