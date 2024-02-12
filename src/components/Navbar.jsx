@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo2 from '../assets/logo2.png';
 import Hamburger from 'hamburger-react';
 
-const navStyles = "cursor-pointer hover:text-[#ecba00]";
+const navStyles = "cursor-pointer hover:text-red-500 font-medium";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,10 +34,10 @@ const Navbar = () => {
         </div>
         <div className='hidden lg:flex ' >
         <ul className='flex items-center gap-x-8  '>
-          <li className='font-medium'>Home</li>
-          <li className='font-medium'>About</li>
-          <li className='font-medium'>Services</li>
-          <li className='font-medium'>Contact</li>
+          <li className={navStyles}>Home</li>
+          <li className={navStyles}>About</li>
+          <li className={navStyles}>Services</li>
+          <li className={navStyles}>Contact</li>
         </ul>
         </div>
       </nav>
