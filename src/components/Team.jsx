@@ -1,7 +1,7 @@
 import Member from "../partials/Member"
 const Team = () => {
   return (
-    <section className="pt-24 pb-36 bg-white overflow-hidden">
+    <section id="team" className="pt-24 pb-36 bg-white overflow-hidden">
     <div className="max-w-[1200px] px-4 mx-auto">
       <h2 className="mb-5 text-3xl md:text-5xl xl:text-6xl text-center font-bold font-heading tracking-px-n leading-none">
         The team behind Trend MMS

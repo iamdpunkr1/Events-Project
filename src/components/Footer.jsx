@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-black to-gray-800 py-8 text-white">
+    <footer id="contactus" className="bg-gradient-to-b from-black to-gray-800 py-8 text-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="flex flex-col items-center mb-4 md:mb-0">
           <a href="#" className="text-2xl font-bold hover:text-gray-300 transition">TREND MMS</a>

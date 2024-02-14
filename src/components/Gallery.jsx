@@ -41,6 +41,7 @@ const Gallery = () => {
   return (
     <>
     <Masonry
+    id="gallery"
     breakpointCols={breakpointColumnsObj}
     className="my-masonry-grid"
     columnClassName="my-masonry-grid_column">
