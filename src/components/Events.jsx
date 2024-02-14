@@ -4,8 +4,15 @@ const Events = () => {
     
     return (
   
-      <section className=" bg-slate-800 ">
-
+      <ul className=" bg-slate-800 background">
+        
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
         <div className="text-center pb-8 pt-16 mb-8  z-10">
             <h1 className={`z-10 text-5xl font-semibold ${bg=="dark"? "text-white" : "text-[#222]"} text-center`}>
                 OUR <span className="text-red-500"> EVENTS</span>
@@ -67,7 +74,7 @@ const Events = () => {
   
         </div>
   
-      </section>
+      </ul>
   
     )
   
