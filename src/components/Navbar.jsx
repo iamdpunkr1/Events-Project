@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center lg:hidden">
                  <Hamburger toggled={isOpen} toggle={setOpen} size={30} color={"#fff"}  />
         </div>
-        <div className='hidden lg:flex ' >
+        <div className='hidde lg:flex' >
         <ul className='flex items-center gap-x-8  '>
           <li className={navStyles}>Home</li>
           <li className={navStyles}>About</li>

@@ -22,7 +22,9 @@ function App() {
     <Mission />
     <Events />
     <Team/>
-    <Gallery/>
+    <div className="max-w-[1200px] mx-auto">
+        <Gallery/>
+    </div>
     <Footer/>
    </>
   )
