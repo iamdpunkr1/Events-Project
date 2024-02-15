@@ -395,11 +395,24 @@ h1 {
   animation: moveBlobs 40s infinite linear;
 }
 
-#gallery{
+.strokeText{
 
     color: black;
     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
   
+}
+
+/* SPONSORS */
+
+.sponsors{
+  position: relative;
+  animation: move-words 20s linear infinite;
+  margin: 0;
+}
+
+@keyframes move-words {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
