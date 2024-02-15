@@ -394,3 +394,12 @@ h1 {
  .animate-blob2 {
   animation: moveBlobs 40s infinite linear;
 }
+
+#gallery{
+
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  
+}

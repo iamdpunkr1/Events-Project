@@ -40,8 +40,11 @@ const Gallery = () => {
 
   return (
     <>
+    <h1 id="gallery" className={`z-10 uppercase text-7xl font-semibold py-28 text-black text-center`}>
+             Gallery
+    </h1>
     <Masonry
-    id="gallery"
+    
     breakpointCols={breakpointColumnsObj}
     className="my-masonry-grid"
     columnClassName="my-masonry-grid_column">

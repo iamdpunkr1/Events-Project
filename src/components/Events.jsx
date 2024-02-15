@@ -1,3 +1,4 @@
+
 const bg="dark";
 
 const Events = () => {
@@ -43,13 +44,15 @@ const Events = () => {
           <div className="flex flex-col gap-8 w-full">
   
             <div className="flex  justify-between max-w-[740px] overflow-hidden  bg-white self-start border-l-8 border-red-500 border-solid rounded-md">
-               <div className="px-4 py-16 mt-8 flex flex-col">
+               <div className="px-4 py-16 mt-8 flex flex-col w-7/12">
                 <h2 className="text-xl font-semibold text-slate-800">Event Name</h2>
                 <div className="w-8 h-[2px] bg-red-500"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ipsam sunt id suscipit debitis numquam minus quo ipsa quas quisquam nostrum non error velit quis, ipsum vitae blanditiis ducimus? Reiciendis!</p>
                </div>
-               <img src="https://via.placeholder.com/300x300" alt="Placeholder"  />
-                
+               
+               <div className="w-5/12">
+                <img src="https://via.placeholder.com/300x300" alt="Placeholder" className="w-full" />
+               </div>
             </div>
       
             <div className="flex  justify-between max-w-[800px] bg-white self-end border-l-8 border-red-500 border-solid rounded-md">

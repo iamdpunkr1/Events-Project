@@ -1,5 +1,5 @@
 import Cards from "../partials/Cards"
-import AnimatedVideo from "../partials/AnimatedVideo"
+
 const bg="light"
 const YTVideos = () => {
   return (
