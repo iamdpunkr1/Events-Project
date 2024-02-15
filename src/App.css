@@ -374,3 +374,23 @@ h1 {
   bottom: -180px;
   animation-delay: 22s;
 }
+
+/* Move blobs */
+@keyframes moveBlobs {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(1200px) translateY(-200px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+@keyframes moveBlobs1 {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(-1200px) translateY(200px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+.animate-blob1{
+  animation: moveBlobs1 40s infinite linear;
+}
+ .animate-blob2 {
+  animation: moveBlobs 40s infinite linear;
+}

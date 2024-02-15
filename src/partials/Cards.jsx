@@ -6,8 +6,8 @@ const Cards = ({ title, link }) => {
 
   return (
     <>
-      <div className=" bg-slate-50 w-full md:w-3/6 lg:w-2/6 rounded-lg shadow-md flex flex-col items-center">
-        <h3 className="text-xl font-bold  pt-4">{title}</h3>
+      <div className=" bg-gray-800 w-full md:w-3/6 lg:w-3/12 rounded-lg shadow-md flex flex-col items-center">
+        <h3 className="text-gray-300 text-lg font-bold  pt-4">{title}</h3>
 
         {/* <button onClick={() => setModal(true)} className="relative p-4 rounded-full bg-red-500 text-white ">
           <svg className='w-8 h-8' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ const Cards = ({ title, link }) => {
         </button>
 
         <div className="py-8 flex justify-center gap-4">
-          <SocialIcons size="28" color="crimson" />
+          <SocialIcons size="24" color="gray" />
         </div>
       </div>
 
