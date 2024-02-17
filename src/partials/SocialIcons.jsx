@@ -3,17 +3,28 @@ import { TfiYoutube } from "react-icons/tfi";
 
 
 
-const SocialIcons = ({size, color}) => {
+const SocialIcons = ({size, color, facebookUrl, twitterUrl, youtubeUrl, instagramUrl}) => {
     const iconStyles= {
         size: size,
         color: color
     }
   return (
     <>
-    <FaFacebookF {...iconStyles} />
-    <FaTwitter {...iconStyles}/>
-    <TfiYoutube {...iconStyles}/>
-    <FaInstagram {...iconStyles}/>
+    <a href={facebookUrl}>
+      <FaFacebookF {...iconStyles} />
+    </a>
+    
+    <a href={twitterUrl}>
+      <FaTwitter {...iconStyles}/>
+    </a>
+    
+    <a href={youtubeUrl}>
+      <TfiYoutube {...iconStyles}/>
+    </a>
+
+    <a href={instagramUrl}>
+      <FaInstagram {...iconStyles}/>
+    </a>
     </>
   )
 }

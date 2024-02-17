@@ -27,9 +27,9 @@ const Cards = ({ title, link }) => {
         <button className='play-btn' onClick={() => setModal(true)}>
         </button>
 
-        <div className="py-8 flex justify-center gap-4">
+        {/* <div className="py-8 flex justify-center gap-4">
           <SocialIcons size="24" color="gray" />
-        </div>
+        </div> */}
       </div>
 
       {modal && (

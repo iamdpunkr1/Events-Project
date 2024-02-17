@@ -2,7 +2,21 @@ import logo from "../assets/logo2.png";
 import SocialIcons from "../partials/SocialIcons";
 const Footer = () => {
   return (
-    <footer id="contactus" className="footer text-white">
+    <footer id="contactus" className="relative bg-slate-900 text-white">
+       
+        <div className="bubbles">
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+        </div>
+
       <div className="max-w-[1200px] mx-auto py-24 px-4 flex justify-between ">
         <div className="w-3/12">
             <img src={logo} alt="logo" className="w-full" />
@@ -92,7 +106,12 @@ const Footer = () => {
         <div className="w-3/12 pt-8">
           <h3 className="text-2xl font-bold mb-4 border-b-2 border-red-500 inline-block pb-2">Follow Us</h3>
           <div className="flex gap-4">
-            <SocialIcons size={24} color="crimson"/>
+            <SocialIcons size={24} color="crimson"
+                         facebookUrl="https://www.facebook.com/TRENDMMSOFFICIAL"
+                         twitterUrl="https://twitter.com/trendmms"
+                         youtubeUrl="https://www.youtube.com/channel/UCv1c4m3JzvZT7Zgk7Vq7m9A"
+                         instagramUrl="https://www.instagram.com/northeast.festival?igsh=MXN0cDBkZWp5ZmN1aw=="
+            />
           </div>
         </div>
       </div>
