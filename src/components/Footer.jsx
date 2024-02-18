@@ -16,8 +16,8 @@ const Footer = () => {
           <div className="bubble"></div>
           <div className="bubble"></div>
         </div>
-
-      <div className="max-w-[1200px] mx-auto py-24 px-4 flex justify-between ">
+      
+      <div className="relative z-40 max-w-[1200px] mx-auto py-24 px-4 flex justify-between ">
         <div className="w-3/12">
             <img src={logo} alt="logo" className="w-full" />
             <p className="text-gray-200  text-justify">We are a not-for-profit Socio Cultural Trust, engaged in promotion of socio-cultural activities. It is considered the biggest
@@ -105,8 +105,8 @@ const Footer = () => {
 
         <div className="w-3/12 pt-8">
           <h3 className="text-2xl font-bold mb-4 border-b-2 border-red-500 inline-block pb-2">Follow Us</h3>
-          <div className="flex gap-4">
-            <SocialIcons size={24} color="crimson"
+          <div className="flex gap-4 z-30">
+            <SocialIcons className="" size={24} color="crimson"
                          facebookUrl="https://www.facebook.com/TRENDMMSOFFICIAL"
                          twitterUrl="https://twitter.com/trendmms"
                          youtubeUrl="https://www.youtube.com/channel/UCv1c4m3JzvZT7Zgk7Vq7m9A"
