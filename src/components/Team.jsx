@@ -3,12 +3,12 @@ import memberImage1 from "../assets/member33.jpeg"
 import memberImage2 from "../assets/member22.jpeg"
 const Team = () => {
   return (
-    <section id="team" className="py-24 bg-white overflow-hidden">
+    <section id="team" className="py-24 bg-gradient-to-b from-gray-900 to-white overflow-hidden">
     <div className="max-w-[1200px] px-4 mx-auto">
-      <h2 className="mb-5 text-2xl md:text-4xl xl:text-5xl text-center font-bold font-heading tracking-px-n leading-none">
+      <h2 className="text-gray-200 mb-5 text-2xl md:text-4xl xl:text-5xl text-center font-bold font-heading tracking-px-n leading-none">
         The team behind Trend MMS
       </h2>
-      <p className="mb-20 text-lg text-gray-600 text-center font-medium md:max-w-xl mx-auto">
+      <p className="mb-20 text-lg text-gray-300 text-center font-medium md:max-w-xl mx-auto">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
         Velit officia consequat duis enim velit mollit.
       </p>
