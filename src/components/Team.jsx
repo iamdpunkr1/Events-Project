@@ -3,7 +3,7 @@ import memberImage1 from "../assets/member33.jpeg"
 import memberImage2 from "../assets/member22.jpeg"
 const Team = () => {
   return (
-    <section id="team" className="py-24 bg-gradient-to-b from-gray-900 to-white overflow-hidden">
+    <section id="team" className="py-24 bg-gradient-to-b from-gray-900 via-gray-700 to-white overflow-hidden">
     <div className="max-w-[1200px] px-4 mx-auto">
       <h2 className="text-gray-200 mb-5 text-2xl md:text-4xl xl:text-5xl text-center font-bold font-heading tracking-px-n leading-none">
         The team behind Trend MMS
