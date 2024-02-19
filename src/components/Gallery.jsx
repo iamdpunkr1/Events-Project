@@ -40,7 +40,7 @@ const Gallery = () => {
 
   return (
     <>
-    <h1 id="gallery" className={`strokeText z-10 uppercase text-7xl font-semibold py-28 text-black text-center`}>
+    <h1 id="gallery" className={`strokeText z-10 uppercase text-6xl font-semibold py-8 text-black text-center`}>
              Gallery
     </h1>
     <Masonry

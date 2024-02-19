@@ -395,14 +395,14 @@ h1 {
   animation: moveBlobs 40s infinite linear;
 }
 
-.strokeText{
+/* .strokeText{
 
     color: black;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: white; 
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
   
-}
+} */
 
 /* SPONSORS */
 
@@ -555,3 +555,18 @@ h1 {
     transform:translateX(-200px);
   }
 }
+
+/* Member */
+
+@media screen and (max-width: 420px) {
+  .member {
+    flex-wrap: wrap !important;
+  }
+
+  .member>div{
+    width: 100% !important;
+  }
+  
+}
+
+
