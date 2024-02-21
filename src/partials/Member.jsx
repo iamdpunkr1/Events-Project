@@ -1,6 +1,6 @@
 import SocialIcons from "./SocialIcons"
 
-const Member = ({title, role, imgUrl}) => {
+const Member = ({title, role, imgUrl, desc}) => {
   return (
     <div className="flex member gap-4  w-full md:w-3/6 lg:w-5/12 py-6 px-4 bg-gray-900 rounded-md">
          
@@ -23,12 +23,8 @@ const Member = ({title, role, imgUrl}) => {
           <p className="text-gray-200 text-md">{role}</p>
           <div className="h-[2px] bg-gray-200 w-2/6 my-2"></div>
 
-          <p className="text-gray-200 text-xs">Amet minim mollit non deserunt
-           ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-           Amet minim mollit non deserunt
-           ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-           Amet minim mollit non deserunt
-           ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          <p className="text-gray-200 text-xs">
+            {desc}
            </p>
         </div>
         

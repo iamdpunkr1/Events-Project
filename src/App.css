@@ -574,7 +574,7 @@ h1 {
 
 .slider {
   overflow: hidden;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   position: relative;
 }
@@ -587,7 +587,7 @@ h1 {
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: slide 10s infinite;
+  animation: slide 20s infinite;
 }
 
 .slider .slide:nth-child(1) {
@@ -597,22 +597,22 @@ h1 {
 
 .slider .slide:nth-child(2) {
   background-image: url('https://images.unsplash.com/photo-1591019052241-e4d95a5dc3fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -2s;
+  animation-delay: -4s;
 }
   
 .slider .slide:nth-child(3) {
   background-image: url('https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -4s;
+  animation-delay: -8s;
 }
   
 .slider .slide:nth-child(4) {
   background-image: url('https://images.unsplash.com/photo-1517430554953-a5ba4678fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -6s;
+  animation-delay: -12s;
 }
 
 .slider .slide:nth-child(5) {
   background-image: url('https://images.unsplash.com/photo-1583161178154-c362b3459d29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -8s;
+  animation-delay: -16s;
 }
 
 @keyframes slide {
@@ -628,4 +628,33 @@ h1 {
     transform: translateX(100%);
     animation-timing-function: ease;
   }
+}
+
+
+/* SCROLL-BTN */
+.scroll-down-btn {
+  transition: all 0.3s ease; /* Transition for smooth hover effect */
+}
+
+.scroll-down-btn {
+  border: solid 1px white; /* Change background color on hover */
+}
+.scroll-down-btn:hover {
+  border: solid 3px white; /* Change background color on hover */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Adjust bounce height */
+  }
+  60% {
+    transform: translateY(-5px); /* Adjust bounce height */
+  }
+}
+
+.animate-bounce:hover {
+  animation: bounce 1s infinite; /* Apply bounce animation on hover */
 }

@@ -1,9 +1,10 @@
+import { forwardRef } from "react"
 import Cards from "../partials/Cards"
-
+import Reveal from "../partials/Reveal"
 const bg="light"
-const YTVideos = () => {
+const YTVideos = forwardRef((props, ref) => {
   return (
-    <div className="bg-white w-full relative pb-24 overflow-hidden">
+    <div ref={ref} id="ytvideos-section" className="bg-white w-full relative pb-24 overflow-hidden">
        
        {/* Add animation to move this below two blobs here and there*/}
        <div className='animate-blob1 absolute bg-red-500 h-96 w-96 rounded-full z-1 blur-2xl -right-20 top-80 md:top-60 lg:top-40 opacity-50'></div>
@@ -13,9 +14,11 @@ const YTVideos = () => {
       <div className="max-w-[1200px] mx-auto py-8 z-10 relative">
       
         <div className="text-center py-8 my-8 z-10">
-          <h1 className={`z-10 text-5xl font-semibold ${bg=="dark"? "text-white" : "text-[#222]"} text-center`}>
+          <Reveal>
+          <h2 className={`z-10 text-5xl font-semibold ${bg=="dark"? "text-white" : "text-[#222]"} text-center`}>
               CHECK OUT OUR <span className="text-red-500"> VIDEOS</span>
-          </h1>
+          </h2>
+          </Reveal>
           
           <div className="flex justify-center h-5 mt-4 relative">
               <span className="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style={{top:"50%"}}></span>
@@ -46,6 +49,6 @@ const YTVideos = () => {
     </div>
    </div>
   )
-}
+})
 
 export default YTVideos
