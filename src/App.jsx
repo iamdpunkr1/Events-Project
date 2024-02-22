@@ -8,7 +8,7 @@ import YTVideos from "./components/YTVideos";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import Slider from "./partials/Slider";
+// import Slider from "./partials/Slider";
 import { useRef } from "react";
 // import Sponsors from "./components/Sponsors";
 
@@ -33,7 +33,6 @@ function App() {
     <Mission />
     <Events />
     <Team/>
-    <Slider/>
     {/* <Sponsors/> */}
     <div className="max-w-[1200px] mx-auto">
         <Gallery/>

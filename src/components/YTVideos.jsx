@@ -13,12 +13,14 @@ const YTVideos = forwardRef((props, ref) => {
      
       <div className="max-w-[1200px] mx-auto py-8 z-10 relative">
       
-        <div className="text-center py-8 my-8 z-10">
+        <div className=" py-8 my-8 z-10">
+        <div className="inline-block flex justify-center items-center">
           <Reveal>
           <h2 className={`z-10 text-5xl font-semibold ${bg=="dark"? "text-white" : "text-[#222]"} text-center`}>
               CHECK OUT OUR <span className="text-red-500"> VIDEOS</span>
           </h2>
           </Reveal>
+          </div>
           
           <div className="flex justify-center h-5 mt-4 relative">
               <span className="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style={{top:"50%"}}></span>

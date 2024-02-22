@@ -1,15 +1,26 @@
+import Reveal from "../partials/Reveal"
 
 const About = () => {
   return (
     <section id="about" className="flex items-center bg-stone-100 min-h-screen font-poppins dark:bg-gray-900 ">
       <div className="justify-center flex-1 max-w-[1200px] py-4 mx-auto lg:py-4 md:px-6">
         <div className="px-4 mb-10 md:text-center md:mb-20">
+        <div className="inline-block flex justify-center items-center">
+          <Reveal>
           <p className="mb-2 text-lg font-semibold text-red-500 dark:text-gray-400">
             About Us
           </p>
+          </Reveal>
+          </div>
+          <div className="inline-block flex justify-center items-center">
+          <Reveal>
           <h2 className="pb-2 text-2xl font-bold text-gray-800 md:text-4xl dark:text-gray-300">
             What we do
           </h2>
+          </Reveal>
+          </div>
+          
+          
           <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
             <div className="flex-1 h-2 bg-red-300"></div>
             <div className="flex-1 h-2 bg-red-500"></div>

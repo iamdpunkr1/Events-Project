@@ -1,4 +1,6 @@
 // import videoplayback from "../assets/videoplayback.mp4";
+import Reveal from "../partials/Reveal"
+
 const Hero = ({handleClick}) => {
   return (
     <div id="home" className="relative -top-20 h-screen z-0">
@@ -20,6 +22,11 @@ const Hero = ({handleClick}) => {
         <div className="slide"></div>
     </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+         <div className="inline-block flex justify-center items-center">
+          <Reveal>
+           <h2 className="text-center text-3xl text-white inline-block max-w-full">Welcome to</h2>
+          </Reveal>
+          </div>
           <h1 className="text-8xl">TREND MMS</h1>
           <p className="text-2xl text-white text-center">We are the best in the business</p>
           

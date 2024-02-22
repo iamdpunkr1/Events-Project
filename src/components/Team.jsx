@@ -6,15 +6,22 @@ const Team = () => {
   return (
     <section id="team" className="py-24 bg-gradient-to-b from-gray-900 via-gray-700 to-white overflow-hidden">
     <div className="max-w-[1200px] px-4 mx-auto">
+    <div className="inline-block flex justify-center items-center">
       <Reveal>
-      <h2 className="text-gray-200 mb-5 text-2xl md:text-4xl xl:text-5xl text-center font-bold font-heading tracking-px-n leading-none">
-        The team behind Trend MMS
-      </h2>
+        <h2 className="text-gray-200 mb-5 text-2xl md:text-4xl xl:text-5xl text-center font-bold font-heading tracking-px-n leading-none">
+          The team behind Trend MMS
+        </h2>
       </Reveal>
+    </div>
+      
+    <div className="inline-block flex justify-center items-center">
+      <Reveal>
       <p className="mb-20 text-lg text-gray-300 text-center font-medium md:max-w-xl mx-auto">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
         Velit officia consequat duis enim velit mollit.
       </p>
+      </Reveal>
+    </div>
       <div className="flex justify-center gap-8 flex-wrap w-full">
         
         {/* <div className="w-full md:w-1/2 lg:w-1/4 p-3">

@@ -1,6 +1,7 @@
 import SocialIcons from "../partials/SocialIcons";
 import eventImage from "../assets/eventImage.jpg";
 import SingleEvent from "../partials/SingleEvent";
+import Reveal from "../partials/Reveal";
 const bg="dark";
 
 const Events = () => {
@@ -18,9 +19,14 @@ const Events = () => {
         <li></li>
 
         <div className="text-center pb-8 pt-16 mb-8  z-10">
-            <h2 className={`z-10 text-5xl font-semibold ${bg=="dark"? "text-white" : "text-[#222]"} text-center`}>
+        <div className="inline-block flex justify-center items-center">
+          <Reveal>
+          <h2 className={`z-10 text-5xl font-semibold ${bg=="dark"? "text-white" : "text-[#222]"} text-center`}>
                 OUR <span className="text-red-500"> EVENTS</span>
             </h2>
+          </Reveal>
+        </div>
+            
             
             <div className="flex justify-center h-5 mt-4 relative">
                 <span className="relative h-[2px] bg-red-500 w-8 md:w-12 lg:w-16" style={{top:"50%"}}></span>

@@ -14,7 +14,7 @@ const Reveal = ({children}) => {
     }, [isInView]);
 
   return (
-    <div ref={ref} style={{position:"relative", width:"100%", overflow:"hidden", textAlign:"center"}}>
+    <div ref={ref} className='relative overflow-hidden text-center'>
         <motion.div
             variants={{
                 hidden: {opacity: 0, y: 75},
