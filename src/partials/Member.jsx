@@ -12,7 +12,7 @@ const Member = ({title, role, imgUrl, desc}) => {
                 
               />
             <div className=" flex justify-center gap-2 md:gap-4 py-4">
-              <SocialIcons color={"#eee"} size={20} />
+              <SocialIcons color={"#eee"} size={20} facebookUrl="insertfacebookurl" instagramUrl={"inserInstagramUrl"}/>
             </div>
          </div>
 

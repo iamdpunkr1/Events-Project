@@ -111,6 +111,7 @@ const Footer = () => {
                          twitterUrl="https://twitter.com/trendmms"
                          youtubeUrl="https://www.youtube.com/channel/UCv1c4m3JzvZT7Zgk7Vq7m9A"
                          instagramUrl="https://www.instagram.com/northeast.festival?igsh=MXN0cDBkZWp5ZmN1aw=="
+                         whatsappUrl="https://www.whatsapp.com"
             />
           </div>
         </div>
