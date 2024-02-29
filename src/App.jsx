@@ -7,10 +7,11 @@ import Navbar from "./components/Navbar";
 import YTVideos from "./components/YTVideos";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
-import { useEffect, useRef, useState } from "react";
+// import Gallery from "./components/Gallery";
+import React,{ useEffect, useRef, useState,  Suspense } from "react";
 // use this loader to display till other components are loaded
 import Loader from "./partials/Loader";
+const Gallery = React.lazy(() => import("./components/Gallery"));
 
 function App() {
   const YTVideosRef = useRef(null);
@@ -50,7 +51,9 @@ function App() {
     <Team/>
     {/* <Sponsors/> */}
     <div className="max-w-[1200px] mx-auto">
+      <Suspense fallback={<Loader />}>
         <Gallery/>
+      </Suspense>
     </div>
     <Footer/>
    </>

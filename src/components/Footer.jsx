@@ -17,14 +17,14 @@ const Footer = () => {
           <div className="bubble"></div>
         </div>
       
-      <div className="relative z-40 max-w-[1200px] mx-auto py-24 px-4 flex justify-between ">
-        <div className="w-3/12">
+      <div className="relative z-40 max-w-[1200px] mx-auto py-24 px-4 flex justify-between flex-wrap">
+        <div className="w-8/12 sm:w-5/12 md:w-5/12 lg:w-3/12 ">
             <img src={logo} alt="logo" className="w-full" />
             <p className="text-gray-200  text-justify">We are a not-for-profit Socio Cultural Trust, engaged in promotion of socio-cultural activities. It is considered the biggest
              organization of the North East and have promoted some iconic initiatives of its own</p>
         </div>
      
-        <div className="w-3/12 pt-8 ">
+        <div className="w-full  sm:w-5/12 md:w-5/12  lg:w-3/12 pt-8 ">
           <h3 className="text-2xl font-bold mb-4 border-b-2 border-red-500 inline-block pb-2">Contact Us</h3>
           
           <div className="flex flex-col gap-4">
@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-3/12 pt-8">
+        <div className="w-full  sm:w-5/12 md:w-5/12 lg:w-3/12 pt-8">
           <h3 className="text-2xl font-bold mb-4 border-b-2 border-red-500 inline-block pb-2">Follow Us</h3>
           <div className="flex gap-4 z-30">
             <SocialIcons className="" size={24} color="crimson"
